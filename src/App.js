@@ -9,6 +9,7 @@ function App() {
     })
   }, [])
 
+
   const drumPads = [
     {
     keyCode: 81,
@@ -58,6 +59,7 @@ function playSound(selector) {
   return (
     <div className="App">
       <div id="drum-machine">
+        <h2>Drum Machine</h2>
         <div id="display">{activeKey}</div>
         <div className="drum-pads">
         {drumPads.map((drumPad) => (
